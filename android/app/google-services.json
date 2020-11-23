@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "567124796563",
+    "firebase_url": "https://biotrack-60ef1.firebaseio.com",
+    "project_id": "biotrack-60ef1",
+    "storage_bucket": "biotrack-60ef1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:567124796563:android:82c945978edc4ae62b9966",
+        "android_client_info": {
+          "package_name": "com.multidev.biodriver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "567124796563-t4jk31rdks3c4rv9qbr3crppgrjtqrrr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1aIrw26Vd3EzqC0R8AND5TTkwEY9w7UE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "567124796563-t4jk31rdks3c4rv9qbr3crppgrjtqrrr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
