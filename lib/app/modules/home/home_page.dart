@@ -35,10 +35,17 @@ class _HomePageState extends ModularState<HomePage, HomeController> {
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: Text(user.firstName),
+        actions: [
+          IconButton(
+              icon: Icon(Icons.exit_to_app),
+              onPressed: () {
+                controller.exit();
+              })
+        ],
       ),
       body: Observer(
         builder: (context) {
-          if (controller.listMtr.isNotEmpty) {
+          if (controller.listMtr != null) {
             return ListView.builder(
               itemCount: controller.listMtr.length,
               itemBuilder: (context, index) {

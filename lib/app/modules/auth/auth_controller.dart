@@ -25,12 +25,13 @@ abstract class _AuthControllerBase with Store {
 
   @action
   Future login() async {
+    loading = true;
     if (isFormValid == true) {
-      loading = true;
       var response = UserRepository().auth(email, password);
       print(response);
       loading = false;
     } else {
+      loading = false;
       return 'Campo obrigatorio';
     }
   }

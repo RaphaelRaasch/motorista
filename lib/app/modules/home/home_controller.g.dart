@@ -64,6 +64,13 @@ mixin _$HomeController on _HomeControllerBase, Store {
     return _$getMtrAsyncAction.run(() => super.getMtr());
   }
 
+  final _$exitAsyncAction = AsyncAction('_HomeControllerBase.exit');
+
+  @override
+  Future exit() {
+    return _$exitAsyncAction.run(() => super.exit());
+  }
+
   @override
   String toString() {
     return '''

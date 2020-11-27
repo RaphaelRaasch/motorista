@@ -4,6 +4,7 @@ import 'package:biodriver/app/modules/repository/motorista_repository.dart';
 import 'package:biodriver/app/modules/repository/mtr_repository.dart';
 import 'package:mobx/mobx.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 part 'home_controller.g.dart';
 
@@ -25,5 +26,12 @@ abstract class _HomeControllerBase with Store {
   Future getMtr() async {
     var response = await MtrRepository().listMtr(motorista.idMultidev);
     listMtr = response;
+  }
+
+  @action
+  exit() async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.clear();
+    Modular.to.pushReplacementNamed('/auth');
   }
 }
